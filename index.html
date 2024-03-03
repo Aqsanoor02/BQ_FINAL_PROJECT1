@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.js">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div id="top_div">
+        <header id="header" >
+            <div class="header_anchor">
+                <a href="">FAQs</a>
+                <a href="">Help</a>
+                <a href="">Support</a>
+            </div>
+            <div class="header_anchor">
+                <i class="fa-brands fa-facebook-f fa-lg" style="color: #ffffff;"></i>
+                <i class="fa-brands fa-twitter fa-lg" style="color: #fafcff;"></i>
+                <i class="fa-brands fa-linkedin-in fa-lg" style="color: #ffffff;"></i>
+                <i class="fa-brands fa-instagram fa-lg" style="color: #ffffff;"></i>
+                <i class="fa-brands fa-youtube fa-lg" style="color: #ffffff;"></i>
+            </div>
+        </header>
+        <div id="logo_div">
+            <h2><span>i</span>CREAM</h2>
+        </div>
+        <div class="navbar">
+            <ul>
+             <li><a href="index.html">HOME</a></li>
+             <li><a href="about.html">ABOUT</a></li>
+             <li><a href="gallery.html">GALLERY</a></li>
+             <li><a href="product.html">PRODUCT</a></li>
+             <li><a href="service.html">SERVICES</a></li>
+             <!-- <li><a href="contact.html">CONTACT</a></li> -->
+            </ul>
+         </div>
+        <div id="carousel_div">
+            <h3>Traditional & Delicious</h3>
+            <h1> Traditional Ice cream <br> Since 1950</h1>
+            <button>Learn More</button>
+        </div>
+    </div>
+   
+    <div id="about">
+        <h2>Traditional & Delicious Ice Cream Since 1950</h2>
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, deleniti qui, totam accusamus veniam quibusdam possimus dignissimos voluptatem, perferendis sint illo quod ea natus quisquam rem beatae suscipit quaerat est!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus numquam omnis iusto distinctio dolorum ipsum eius! Provident dignissimos suscipit, quia excepturi eius dolor libero deserunt, rerum similique est iusto commodi.</p>
+        <button>Learn More</button>
+                    
+    </div>
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="shopimagae1.jpg" alt="Image 1">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="shopimagae2.jpg" alt="Image 2">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="shopimagae3.jpg" alt="Image 3">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="shopimagae4.jpg" alt="Image 4">
+        </div>
+
+        
+        <script>
+            let slideIndex = 0;
+            showSlides();
+
+        function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    slides[slideIndex-1].style.display = "block";  
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+        </script>    
+    </div>
+   
+    <div id="about">
+        <h4>Our Features</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam minus consequatur officia nesciunt atque, a facere eveniet quae ducimus vero porro ipsam perspiciatis beatae labore dignissimos. Repellat sunt ea deserunt.</p>
+        <div>
+            <li>blueberry</li>
+            <li>vanila</li>
+            <li>rasberry</li>
+            <li>strawberry</li>
+        </div>
+            <!-- <li>blueberry</li>
+            <li>vanila</li>
+            <li>rasberry</li>
+            <li>strawberry</li> -->
+        
+        <button>Learn More</button>   
+    </div>
+    <div id="video-parent">
+        <div class="video-child">
+            <video src="pexels-rodnae-productions-6412305 (1080p).mp4"></video>
+        </div>
+        <div id="video_content" class="video-child">
+         <div  >$15</div>
+         <h3>Chocolate Ice Cream</h3> 
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, eveniet excepturi ullam soluta eos quaerat ratione veniam fugit, aspernatur explicabo enim optio labore repudiandae ut doloremque voluptatem, distinctio provident nam?</p>
+         <button>Order Now</button>  
+        </div>
+    </div>
+    
+    <!-- <h1> <b>Best Services We Provide For Our Clients</b></h1>
+
+    <div id="Icecream">
+<div class="card">
+<img src="https://media.istockphoto.com/id/849558282/photo/ice-cream-scoops-with-cherry-and-whipped-cream.jpg?s=1024x1024&w=is&k=20&c=BVTgxfFSxgRPJVo8MbBGVnytx9H6CbI0VZWykVlIqYE=" alt="">
+<h2>Quality Maintain</h2>
+<p>Ice cream scoops with cherry and whipped cream stock photo
+    Backgrounds, Berry Fruit, Bowl, Cherry, Chocolate</p>
+    <h4> <u>Learn More</u></h4>
+</div>
+<div class="card">
+<img src="https://media.istockphoto.com/id/464602026/photo/ice-cream.jpg?s=1024x1024&w=is&k=20&c=q-vvwaI6Gze-VlMKHIggBWfDPyQ6VN4jNBBzlOdWDIg=" alt="">
+<h2>Individual Approach</h2>
+<P>Ice Cream chocolate and vanilla , summer sundae with fresh fruits on 
+    wooden background. Tropical beach. Holiday concept.</P>
+    <h4><u>Learn More</u></h4>
+</div>
+    </div> -->
+    <br>
+    <br>
+    <br>
+    <h1><b>Delicious Ice Cream Made From Our Very Own <br>
+        Organic Milk</b></h1>
+<div class="div2">
+    <div class="milk_icecream">
+      <img src="https://www.keep-calm-and-eat-ice-cream.com/wp-content/uploads/2022/08/Ice-cream-sundae-hero-02.jpg" alt="">
+    </div>
+    <div class="milk_icecream">
+      <img src="https://plus.unsplash.com/premium_photo-1661386235368-ab28ffd63a84?q=80&w=1376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+    </div>
+</div>
+<div class="div2" >
+    <div class="milk_icecream">
+        <img src="https://media.istockphoto.com/id/1319628800/photo/assorted-ice-cream-waffle-cones-in-a-row-colorful-different-flavor-on-pink-and-blue-wood.jpg?s=2048x2048&w=is&k=20&c=n8GXfyl4c626iw4eHzCMaA65grJAd8uVwOJu62K9J4I=" alt="">
+    </div>
+    <div class="milk_icecream" >
+        <img src="https://images.unsplash.com/photo-1633933358116-a27b902fad35?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+    </div>
+</div>
+<div class="div2" >
+    <div class="milk_icecream">
+        <img src="https://media.istockphoto.com/id/1315595466/photo/ice-cream-glass-cup-italian-gelato-on-white-background-chocolate-and-hazelnut-with-wafer.jpg?s=612x612&w=0&k=20&c=TAGc_fyHw_9gWbeXE9o68GMPUFpjX9wMMRHxkOcGRTI=" alt="">
+    </div>
+    <div class="milk_icecream" >
+        <img src="https://images.unsplash.com/photo-1586769412527-ab0855979b2e?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+
+    </div>
+</div>
+
+
+    
+</div>
+<h1>Best Prices We Offer For Ice Creame <br>Lovers </h1>
+<div id="container1">
+        <div class="flavor1">
+        <div class="inr1">$99</div>
+        <div class="inr2"></div>
+        <h2>ButterScotch Ice Cream</h2>
+        <button>Order Now</button>
+        </div>
+<div class="flavor1">
+        <div class="inr1">$99</div>
+        <div class="inr3"></div>
+        <h2>Strawberry Ice Creame</h2>
+        <button>Order Now</button> 
+</div>
+    <div class="flavor2">
+    <div class="inr1">$99</div>
+    <div class="inr3"></div>
+    <h2>Strawberry Ice Creame</h2>
+    <button>Order Now</button> 
+</div>
+<div class="flavor2">
+        <div class="inr1">$99</div>
+        <div class="inr5"></div>
+        <h2>Vanilla Ice <br> Creame</h2>
+        <button>Order Now</button>
+</div>
+<div class="flavor3">
+       <div class="inr1">$99</div>
+       <div class="inr6"></div>
+       <h2>Mango Ice <br> Creame</h2>
+       <button>Order Now</button>
+</div>
+</div>
+<h1>Experienced & Most Famouse Ice  Cream <br>Chefs</h1>
+<div id="container2">
+    <div class="chef1">
+    <div class="c1"></div>
+    <h2 class="text">Full Name</h2>  
+    <h4>DESIGNATION</h4>
+    <div class="outerlogo"> 
+        <div class="logo"><i class="fa-brands fa-twitter fa-xl" style="color: #74C0FC;"></i></div>
+        <div class="logo"><i class="fa-brands fa-facebook-f fa-xl" style="color: #74C0FC;"></i></div>
+        <div class="logo"><i class="fa-brands fa-linkedin-in fa-xl" style="color: #74C0FC;"></i></div>
+    </div>  
+    </div>
+    <div class="chef1">
+        <div class="c2"></div>
+        <h2 class="text">Full Name</h2>  
+        <h4>DESIGNATION</h4>
+        <div class="outerlogo"> 
+            <div class="logo"><i class="fa-brands fa-twitter fa-xl" style="color: #74C0FC;"></i></div>
+            <div class="logo"><i class="fa-brands fa-facebook-f fa-xl" style="color: #74C0FC;"></i></div>
+            <div class="logo"><i class="fa-brands fa-linkedin-in fa-xl" style="color: #74C0FC;"></i></div>
+        </div>  
+        </div>
+        <div class="chef2">
+            <div class="c3"></div>
+            <h2 class="text">Full Name</h2>  
+            <h4>DESIGNATION</h4>
+            <div class="outerlogo"> 
+                <div class="logo"><i class="fa-brands fa-twitter fa-xl" style="color: #74C0FC;"></i></div>
+                <div class="logo"><i class="fa-brands fa-facebook-f fa-xl" style="color: #74C0FC;"></i></div>
+                <div class="logo"><i class="fa-brands fa-linkedin-in fa-xl" style="color: #74C0FC;"></i></div>
+            </div>  
+            </div>
+            <div class="chef2">
+                <div class="c4"></div>
+                <h2 class="text">Full Name</h2>  
+                <h4>DESIGNATION</h4>
+                <div class="outerlogo"> 
+                    <div class="logo"><i class="fa-brands fa-twitter fa-xl" style="color: #74C0FC;"></i></div>
+                    <div class="logo"><i class="fa-brands fa-facebook-f fa-xl" style="color: #74C0FC;"></i></div>
+                    <div class="logo"><i class="fa-brands fa-linkedin-in fa-xl" style="color: #74C0FC;"></i></div>
+                </div>  
+            </div>
+</div>
+<h1>Clients Say About Our Famous Ice Cream</h1>
+
+<div class="reviews_parent">
+    <div class="reviews" >
+        <div class="clientimg">
+            <img src="profileImg1.jpg" alt="">
+        </div>
+        <div>
+            <p>A visit to Icream is like stepping into a dreamland of creamy delights. With flavors that dance on your taste buds and a cozy atmosphere, it's the ultimate treat spot!</p>
+            <h4>Jennifer </h4>
+        </div>
+    </div>
+    <div class="reviews" >
+        <div class="clientimg"><img src="profileImg2.jpg" alt=""></div>
+        <div>
+            <p>Icream is where every craving finds its match! From classic cones to indulgent sundaes, their ice cream creations are simply divine. A must-visit for any dessert lover!</p>
+            <h4>Sofia Michel</h4>
+        </div>
+    </div> 
+    <div class="reviews" >
+        <div class="clientimg" ><img src="profileImg3.jpg" alt=""></div>
+        <div>
+            <p>Icream  is my go-to for a cool escape on a hot day! With a wide range of flavors and friendly service, it's the perfect place to chill with friends or enjoy a solo treat.</p>
+            <h4>Ryan David</h4>
+        </div>
+    </div>
+</div>  
+
+        <!-- <div id="text"><centre>
+             <p><br>Dolor eirmod diam stet kasd sed. Aliqu rebum est eos.</br>
+                <br>Rebum elitr dolore et eos labore,stet justo sed est sed.</br>
+                <br>Diam sed sed dolor stet amet eirmod eos labore diam</br></p></centre></div>
+
+                <div id="image"><img src="c:\Users\Administrator\Downloads\clientimg.jpg">
+                    <h3>Client Name</h3>
+                    <p>Profession</p>
+                </div>  -->
+ 
+<footer>
+    <h1 id="footer_logo"><span>i</span>CREAM</h1>
+     
+    <div id="address_parent">
+        <div class="address">
+            <h3>GET IN TOUCH</h3>
+            <h4>123 Street, New York, USA</h4>
+            <h4>+012 34567890</h4>
+            
+        </div>
+        <div class="address">
+            <h3>Opening Hours</h3>
+            <h4>Mon - Sat , 8AM - 5PM</h4>
+            <h4>Sunday: Closed</h4>
+        </div> 
+    </div> 
+                       
+</footer>               
+                
+                            
+
+</body>
+</html>

@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+
+</head>
+<body>
+    <header>
+        <div class="header_anchor">
+            <a href="">FAQs</a>
+            <a href="">Help</a>
+            <a href="">Support</a>
+        </div>
+        <div class="header_anchor">
+            <i class="fa-brands fa-facebook-f fa-lg" style="color: #ffffff;"></i>
+            <i class="fa-brands fa-twitter fa-lg" style="color: #fafcff;"></i>
+            <i class="fa-brands fa-linkedin-in fa-lg" style="color: #ffffff;"></i>
+            <i class="fa-brands fa-instagram fa-lg" style="color: #ffffff;"></i>
+            <i class="fa-brands fa-youtube fa-lg" style="color: #ffffff;"></i>
+        </div>
+    </header>
+    <div id="logo_div">
+        <h2><span>i</span>CREAM</h2>
+    </div>
+    <div class="navbar">
+        <ul>
+         <li><a href="index.html">HOME</a></li>
+         <li><a href="about.html">ABOUT</a></li>
+         <li><a href="gallery.html">GALLERY</a></li>
+         <li><a href="product.html">PRODUCT</a></li>
+         <li><a href="service.html">SERVICES</a></li>
+         <!-- <li><a href="#contact">CONTACT</a></li> -->
+        </ul>
+     </div>
+    <h1> <b>Best Services We Provide For Our Clients</b></h1>
+
+    <div id="Icecream">
+<div class="card">
+<img src="https://media.istockphoto.com/id/849558282/photo/ice-cream-scoops-with-cherry-and-whipped-cream.jpg?s=1024x1024&w=is&k=20&c=BVTgxfFSxgRPJVo8MbBGVnytx9H6CbI0VZWykVlIqYE=" alt="">
+<h2>Quality Maintain</h2>
+<p>Ice cream scoops with cherry and whipped cream stock photo
+    Backgrounds, Berry Fruit, Bowl, Cherry, Chocolate</p>
+    <h4> <u>Learn More</u></h4>
+</div>
+<div class="card">
+<img src="https://media.istockphoto.com/id/464602026/photo/ice-cream.jpg?s=1024x1024&w=is&k=20&c=q-vvwaI6Gze-VlMKHIggBWfDPyQ6VN4jNBBzlOdWDIg=" alt="">
+<h2>Individual Approach</h2>
+<P>Ice Cream chocolate and vanilla , summer sundae with fresh fruits on 
+    wooden background. Tropical beach. Holiday concept.</P>
+    <h4><u>Learn More</u></h4>
+</div>
+  
+</div>             
+ 
+    <style>
+        body{
+    margin: 0;
+    padding: 0;
+}
+        header{
+    background-color: rgb(247, 122, 164);
+    height: 50px;
+    padding-left: 70px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.header_anchor{
+    padding-left:90px;
+    padding-top: 15px;
+    padding-right: 140px;
+}
+.header_anchor a{
+    padding-right: 20px;
+    color: white;
+    text-decoration: none;
+    padding-left: 20px;
+}
+.header_anchor i{
+    padding-left: 40px;
+}
+.header_anchor :hover{
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+#logo_div{
+    height: 60px;
+    width: auto;
+    text-align: center;
+    text-shadow: 1px 1.5px 2px crimson;
+    background-color: white;
+    color: rgb(247, 122, 164);
+    padding-left: 20px;
+}
+#logo_div span{
+    color: rgb(13, 198, 198);
+}
+
+.navbar{
+    width: auto;
+    height: 70px;
+    text-align: center;
+    background-color: #9fc9d9;
+    /* padding-left: 40px; */
+
+}
+.navbar li{
+    display: inline-flex;
+    width: auto;
+   
+}
+.navbar a{
+    text-decoration: none;
+    color: chocolate;
+    padding: 20px 10px;
+}
+.navbar a:hover{
+    text-decoration: underline;
+}
+h1{
+    color: black;
+    text-align: center;
+}
+.card{
+    border:3px solid white;
+    width: 300px;
+    margin:10px;
+    padding:10px; 
+}
+.card img{
+    width:200px;
+    height:100px;
+    border-radius: 50%;
+
+}
+#Icecream{
+    display: flex;
+    justify-content: space-around;
+}
+body{
+    background-color: lavender;
+}
+footer{
+    background-color: palevioletred;
+    height: max-content;
+    width: auto;
+    color: white;
+}
+#footer_logo{
+    text-shadow: 3px 3px 5px crimson;
+    margin-left: 50px;
+}
+
+footer h1{
+    color: white;
+    text-align: left;
+}
+footer h1 span{
+    color: rgb(13, 198, 198);
+}
+.address{
+    color: white;
+    flex-wrap: wrap;
+    height: max-content;
+    width: auto;
+    /* border: 2px solid white; */
+    text-align: center;
+    /* display: flex; */
+    
+}
+.address h4{
+    font-size: 15px ;
+}
+.address h3{
+    text-decoration: underline;
+    text-decoration-color:white ;
+}
+
+
+#address_parent{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media screen and (max-width: 700px) {
+    header{
+        width: 700px;
+    }
+    .header_anchor {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .header_anchor i {
+        padding-left: 20px;
+        padding-right: 0px;
+    }
+    #logo_div {
+        text-align: center;       
+        width: 700px;
+    }
+    .navbar {
+        padding-left: 20px;
+    }
+    #carousel_div {
+        padding-top: 100px;
+    }
+    #about {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .slideshow-container {
+        width: 600px;
+        height: 500px;
+        padding-top: 50px;
+        padding-left: 30px;
+    }
+    #video-parent{
+        display: block;
+        height: max-content;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    header{
+        width: 500px;
+        /* display: block; */
+        height: max-content;
+        padding-bottom: 10px;
+
+
+    }
+    .header_anchor {
+        padding-left: 0px;
+        padding-right: 5px;
+    }
+    .header_anchor i{
+        padding-left: 5px;
+    }
+    .header_anchor a{
+        padding-left: 10px;
+    }
+    #logo_div {
+        width: 500px;
+        text-align: center;
+    }
+    .navbar {
+        width:500px;
+    }
+    .navbar a{
+        padding-left: 0px;
+        font-size: small;
+    }
+    #carousel_div {
+        padding-top: 60px;
+    }
+    #about {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .slideshow-container {
+        padding-top: 40px;
+        width: 400px;
+        height: 300px;
+        padding-top: 50px;
+        padding-left: 30px;
+    }
+    #video-parent{
+        display: block;
+        height: max-content;
+        width: 450px;
+        margin-right: 0px;
+        align-content: space-between;
+       
+        
+    }
+    .video-child video{
+        width: 400px;
+        padding-left: 0px;
+       
+        
+    }
+    .video-child{
+        width: 400px;
+        height: 400px;
+        background-color: #9fc9d9;
+        background-position: cover;
+        align-content: space-between;
+    }
+    #video_content{
+        box-sizing: border-box;
+        padding-top: 20px;
+    }
+    #video_content button{
+        margin-left: 130px;
+    }
+    #about button{
+        margin-left: 150px;
+    }
+
+}
+
+    </style>
+    <div>
+        <footer>
+            <h1 id="footer_logo"><span>i</span>CREAM</h1>
+             
+            <div id="address_parent">
+                <div class="address">
+                    <h3>GET IN TOUCH</h3>
+                    <h4>123 Street, New York, USA</h4>
+                    <h4>+012 34567890</h4>
+                    
+                </div>
+                <div class="address">
+                    <h3>Opening Hours</h3>
+                    <h4>Mon - Sat , 8AM - 5PM</h4>
+                    <h4>Sunday: Closed</h4>
+                </div> 
+            </div> 
+                               
+        </footer>
+</body>
+</html>
